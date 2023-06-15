@@ -21,3 +21,5 @@ COPY --from=0 /src/node_modules ./node_modules
 COPY --from=0 /src/package.json /src/server.js ./
 
 CMD ["npm", "run", "server"]
+
+

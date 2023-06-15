@@ -22,7 +22,7 @@ const applyPaletteSettings = (settings) => {
 
   const primary = mergeIfSettingIsNotEmpty(
     {
-      main: "#004C74"
+      main: "#B00020"
     },
     "primary"
   );
@@ -66,8 +66,7 @@ const applyPaletteSettings = (settings) => {
 
   const text = mergeIfSettingIsNotEmpty(
     {
-      primary: getDarken(info.main),
-      secondary: primary.main
+      main: "#000000"
     },
     "text"
   );
@@ -598,7 +597,7 @@ const PDF_THEME = {
   },
   colors: {
     // TODO: Make this color configurable, get PRIMARY (`getLighten(PRIMARY)`) from `theme`
-    link: getLighten("#004C74")
+    link: getLighten("#e60000")
   },
   logoWidth: 120
 };
